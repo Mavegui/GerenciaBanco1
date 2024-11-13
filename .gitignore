@@ -1,0 +1,7 @@
+# Ignorar ficheiros compilados
+target/
+*.class
+
+# Ignorar ficheiros de configuração do sistema
+.DS_Store
+*.log
