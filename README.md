@@ -27,4 +27,4 @@ O sistema simula um banco, permitindo a realização de operações bancárias b
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/gerenciabanco.git
+   git clone https://github.com/mavegui/gerenciabanco.git
