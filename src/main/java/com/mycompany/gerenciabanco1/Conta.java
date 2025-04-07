@@ -5,15 +5,13 @@ public class Conta {
 
     // Construtor
     public Conta() {
-        this.saldo = 0.0; // Inicializando o saldo com zero
+        this.saldo = 0.0; 
     }
 
-    // Método para consultar o saldo
     public void exibirSaldo() {
         System.out.println("Saldo atual: R$ " + saldo);
     }
-
-    // Método para realizar um depósito
+    
     public void depositar(double valor) {
         if (valor > 0) {
             saldo += valor;
@@ -23,7 +21,6 @@ public class Conta {
         }
     }
 
-    // Método para realizar um saque
     public void sacar(double valor) {
         if (valor > 0 && valor <= saldo) {
             saldo -= valor;
