@@ -5,10 +5,8 @@ import java.util.Scanner;
 public class GerenciaBanco1 {
 
     public static void main(String[] args) {
-        // Bloco try-with-resources para garantir que o Scanner será fechado
         try (Scanner scanner = new Scanner(System.in)) {
 
-            // Criação do cliente e da conta
             System.out.print("Informe seu nome: ");
             String nome = scanner.nextLine();
             System.out.print("Informe seu sobrenome: ");
@@ -21,7 +19,6 @@ public class GerenciaBanco1 {
 
             int opcao;
             do {
-                // Exibição do menu
                 System.out.println("\n--- Menu ---");
                 System.out.println("1. Exibir informações do cliente");
                 System.out.println("2. Consultar saldo");
@@ -31,7 +28,6 @@ public class GerenciaBanco1 {
                 System.out.print("Escolha uma opção: ");
                 opcao = scanner.nextInt();
 
-                // Convertendo o switch tradicional para switch rules
                 switch (opcao) {
                     case 1 -> cliente.exibirInformacoes();
                     case 2 -> conta.exibirSaldo();
@@ -50,6 +46,6 @@ public class GerenciaBanco1 {
                 }
             } while (opcao != 5);
 
-        } // Scanner será automaticamente fechado aqui
+        }
     }
 }
